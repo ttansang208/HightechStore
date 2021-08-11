@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.0.final using JasperReports Library version 6.5.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Invoice" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="76f78071-6951-4b08-9977-594e6d053d92">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="Dataset1" uuid="7ae82be8-c615-45ce-98c8-d722940ea6d8">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="103" splitType="Stretch">
+			<textField>
+				<reportElement stretchType="RelativeToBandHeight" x="200" y="-10" width="150" height="112" uuid="f5cbcb7b-77db-4fe5-973d-7f7a57a522ca"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Dancing Script" size="48"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Invoice]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-20" y="9" width="141" height="32" uuid="8a63654b-394f-4a40-b0b0-8c19cdd3b272"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Alegreya Sans Black" size="16" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[High Tech Store]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="430" y="0" width="122" height="100" uuid="ff773a08-7b50-4fb3-8129-435484a3b27f"/>
+				<jr:QRCode xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<jr:codeExpression><![CDATA["123456789"]]></jr:codeExpression>
+				</jr:QRCode>
+			</componentElement>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="-20" y="42" width="140" height="27" uuid="3933e2ff-ca86-40e7-8666-4d37fc97fc45"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="327" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="27" width="120" height="20" uuid="da27b1da-9101-4b08-aa29-16e9fd02f24a"/>
+				<textElement>
+					<font fontName="Montserrat Alternates ExLight" size="12"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="50" width="120" height="20" uuid="55a767dc-579f-4b10-8ea6-a33b27c5f43b"/>
+				<textElement>
+					<font fontName="Montserrat Alternates ExLight" size="12"/>
+				</textElement>
+				<text><![CDATA[Phone Number: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="73" width="120" height="20" uuid="dbbcdcaa-c368-4e1e-b4b1-09e18be74502"/>
+				<textElement>
+					<font fontName="Montserrat Alternates ExLight" size="12"/>
+				</textElement>
+				<text><![CDATA[Address:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="96" width="120" height="20" uuid="d87b695e-76a9-4ca0-857a-6b0f96e44b1e"/>
+				<textElement>
+					<font fontName="Montserrat Alternates ExLight" size="12"/>
+				</textElement>
+				<text><![CDATA[Payment Method: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="27" width="160" height="20" uuid="24ce2ebd-e770-4c54-bf25-effdf2b7682d"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="50" width="160" height="20" uuid="efda297f-de9c-4db4-b0aa-e6ebbca891cc"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="73" width="160" height="20" uuid="3c5f30bd-830f-44b6-b4a8-a09ec1615b4d"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="96" width="160" height="20" uuid="dd9b5203-556e-4a55-b4e3-172fb35bece3"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="94" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="115" splitType="Stretch"/>
+	</summary>
+</jasperReport>
